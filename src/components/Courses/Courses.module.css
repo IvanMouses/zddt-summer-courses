@@ -1,0 +1,587 @@
+.courses {
+  display: flex;
+}
+.coursesContainer {
+  padding: 20px 10px;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  top: 0;
+  bottom: 0;
+  row-gap: 20px;
+}
+.coursesHeader {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+@media (max-width: 425px) {
+  .coursesHeader {
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+}
+.coursesTitle {
+  font-size: 30px;
+  font-weight: 600;
+}
+.coursesCards {
+  display: grid;
+  grid-template-columns: repeat(1, 500px);
+  gap: 10px;
+}
+@media (max-width: 425px) {
+  .coursesCards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.coursesCard {
+  display: flex;
+  position: relative;
+  cursor: pointer;
+}
+@media (max-width: 425px) {
+  .coursesCard {
+    flex: 1 1 100%;
+  }
+}
+.coursesCardBody {
+  transition: all 0.3s;
+  flex: 1 1 auto;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.coursesCardBody:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.coursesCardBody:hover > .coursesCardImage > img {
+  transition: all 0.5s;
+  transform: scale(1.05);
+}
+.coursesCardImage {
+  transition: all 0.5s;
+  padding-bottom: 60%;
+  position: relative;
+  overflow: hidden;
+}
+.coursesCardPicture {
+  transition: all 0.5s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.coursesCardTitle {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 20px;
+}
+@media (max-width: 375px) {
+  .coursesCardTitle {
+    padding: 10px;
+  }
+}
+.coursesCardExtra {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.coursesCardExtraText {
+  width: fit-content;
+  align-self: flex-end;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 600;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+@media (max-width: 425px) {
+  .coursesCardExtraText {
+    font-size: 10px;
+    padding: 5px;
+  }
+}
+
+/* SHOW MORE */
+.coursesShowMore {
+  margin-left: 540px;
+  display: flex;
+  flex: 1 1 100%;
+}
+.coursesShowMoreContainer {
+  /* max-width: 1140px;
+  margin: 0px auto; */
+  padding: 20px 10px;
+  flex: 1 1 auto;
+}
+.coursesShowMoreCards {
+  margin-bottom: 20px;
+}
+.coursesShowMoreCardsTitle {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.coursesShowMoreCard {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+@media (max-width: 425px) {
+  .coursesShowMoreCard {
+    border-radius: 0px;
+  }
+}
+.coursesShowMoreCard:not(:last-child) {
+  margin-bottom: 20px;
+}
+.coursesShowMoreCardBody {
+  padding: 20px;
+}
+@media (max-width: 425px) {
+  .coursesShowMoreCardBody {
+    padding: 10px;
+  }
+}
+.coursesShowMoreCardTitle {
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.coursesShowMoreCardTeacherIcons {
+  display: flex;
+  gap: 10px;
+}
+.coursesShowMoreCardTeacherIcon {
+  display: flex;
+  column-gap: 10px;
+}
+.coursesShowMoreCardTeacherIcon {
+  margin-bottom: 10px;
+}
+.coursesShowMoreCardTeacherIcon > img {
+  max-width: 200px;
+  width: 100%;
+}
+@media (max-width: 425px) {
+  .coursesShowMoreCardTeacherIcon > img {
+    max-width: 120px;
+  }
+}
+.coursesShowMoreCardTeacherName,
+.coursesShowMoreCardProgrammCategory,
+.coursesShowMoreCardProgrammDuration,
+.coursesShowMoreCardProgrammPrice {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.coursesShowMoreCardTeacherName > span,
+.coursesShowMoreCardProgrammCategory > span,
+.coursesShowMoreCardProgrammDuration > span,
+.coursesShowMoreCardProgrammPrice > span {
+  font-weight: 600;
+}
+
+.coursesShowMoreCardProgrammDescription > p {
+  font-size: 22px;
+  text-align: justify;
+  margin-bottom: 10px;
+}
+.coursesShowMoreCardProgrammDescription > p:last-of-type {
+  margin-bottom: 20px;
+}
+@media (max-width: 425px) {
+  .coursesShowMoreCardProgrammDescription > p:last-of-type {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 425px) {
+  .coursesShowMoreCardProgrammDescription > p {
+    font-size: 16px;
+  }
+}
+.coursesShowMoreCardProgrammScheduleColumns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+@media (max-width: 425px) {
+  .coursesShowMoreCardProgrammScheduleColumns {
+    flex-direction: column;
+    row-gap: 5px;
+  }
+}
+.coursesShowMoreCardProgrammScheduleColumn {
+  transition: all 0.5s ease 0s;
+  position: relative;
+  cursor: pointer;
+  flex: 1 1 auto;
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+  background-color: rgb(219, 240, 253);
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+@media (min-width: 1024px) {
+  .coursesShowMoreCardProgrammScheduleColumn:hover {
+    background-color: rgb(175, 224, 255);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+      rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  }
+}
+@media (max-width: 768px) {
+  .coursesShowMoreCardProgrammScheduleColumn {
+    font-size: 18px;
+    padding: 15px;
+  }
+}
+@media (max-width: 425px) {
+  .coursesShowMoreCardProgrammScheduleColumn {
+    font-size: 16px;
+    padding: 10px;
+    box-shadow: none;
+    text-align-last: left;
+  }
+}
+
+.coursesShowMoreCardProgrammScheduleColumnIcon {
+  transition: all 0.5s ease 0s;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+@media (max-width: 425px) {
+  .coursesShowMoreCardProgrammScheduleColumnIcon {
+    font-size: 16px;
+    top: 5px;
+    right: 5px;
+  }
+}
+@media (max-width: 375px) {
+  .coursesShowMoreCardProgrammScheduleColumnIcon {
+    top: 2px;
+    right: 5px;
+  }
+}
+.coursesShowMoreCardProgrammScheduleColumnIcon.active {
+  transform: rotate(180deg);
+}
+
+.coursesShowMoreCardProgrammScheduleRows {
+  position: relative;
+  overflow: hidden;
+}
+.coursesShowMoreCardProgrammScheduleRowsWrapper {
+  position: static;
+}
+.coursesShowMoreCardProgrammScheduleRow {
+  transition: all 0.5s ease 0s;
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  top: -100%;
+  left: 0;
+  padding-top: 20px;
+  font-size: 18px;
+  z-index: -1;
+  transform: scale(0.7);
+  margin-bottom: 1px;
+}
+
+@media (max-width: 768px) {
+  .coursesShowMoreCardProgrammScheduleRow {
+    transition: none;
+  }
+}
+@media (max-width: 425px) {
+  .coursesShowMoreCardProgrammScheduleRow {
+    font-size: 16px;
+    padding-top: 10px;
+  }
+}
+.coursesShowMoreCardProgrammScheduleRow.active {
+  opacity: 1;
+  position: static;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  transform: scale(1);
+  z-index: 1;
+}
+.coursesShowMoreCardProgrammScheduleYear,
+.coursesShowMoreCardProgrammScheduleAge {
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+.coursesShowMoreCardProgrammScheduleYear > span,
+.coursesShowMoreCardProgrammScheduleAge > span {
+  font-weight: 600;
+}
+.coursesShowMoreCardProgrammScheduleTable {
+  margin-bottom: 20px;
+}
+@media (max-width: 425px) {
+  .coursesShowMoreCardProgrammScheduleTable {
+    margin-bottom: 10px;
+  }
+}
+.coursesShowMoreCardProgrammScheduleTableDays {
+  font-size: 22px;
+  display: flex;
+}
+.coursesShowMoreCardProgrammScheduleTableDay {
+  font-weight: 600;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 16.66%;
+  row-gap: 10px;
+  border: 1px solid #000;
+}
+
+.coursesShowMoreCardProgrammScheduleTableDay:not(:last-child) {
+  border-right: none;
+}
+
+.coursesShowMoreCardProgrammScheduleTableTime {
+  font-weight: normal;
+  padding: 10px 10px 0px 10px;
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid #000;
+}
+
+.coursesShowMoreCardProgrammScheduleSignInButton {
+  transition: all 0.3s;
+  border: none;
+  display: inline-flex;
+  align-self: flex-start;
+  padding: 10px 20px;
+  font-size: 24px;
+  background-color: rgb(175, 224, 255);
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.coursesSchedule {
+  display: inline-flex;
+  transition: all 0.3s;
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  align-items: center;
+  gap: 20px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.coursesSchedule.active {
+  position: fixed;
+  z-index: 5;
+  border-radius: 0px;
+  opacity: 0.8;
+  box-shadow: none;
+}
+
+.coursesSchedule:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  opacity: 1;
+}
+
+.fiterDescription {
+  cursor: pointer;
+}
+.filtersIcon {
+  cursor: pointer;
+  font-size: 20px;
+}
+.coursesScheduleIcon {
+  font-size: 20px;
+}
+.filterContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.filters {
+  display: none;
+}
+.filters.active {
+  background-color: #fff;
+  display: flex;
+  position: absolute;
+  top: 40px;
+  right: 0px;
+  z-index: 3;
+}
+
+.filtersIcon.active {
+  color: rgb(255, 64, 125);
+}
+.filterAgeInput,
+.filterProgrammCategoryInput {
+  flex: 1 1 auto;
+  border: 1px solid gainsboro;
+  outline: none;
+  padding: 10px;
+}
+.filterAgeInput {
+  border-right: none;
+}
+
+.filterProgrammCategory {
+  cursor: pointer;
+}
+.filterProgrammCategoryInput {
+  position: relative;
+  z-index: -1;
+  background-color: #fff;
+}
+.filterProgrammCategoryInput::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+.coursesCardsMissingPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.coursesCardsMissingPageImg {
+  width: 50%;
+}
+
+.filterProgrammCategory,
+.filterAge {
+  position: relative;
+  display: flex;
+}
+.filterProgrammCategorySelect {
+  display: none;
+  width: 100%;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid gainsboro;
+  border-top: none;
+  z-index: -1;
+  opacity: 0;
+}
+.filterProgrammCategorySelect.active {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  z-index: 1;
+  opacity: 1;
+  transform: translateY(37px);
+}
+.filterProgrammCategoryOption {
+  font-size: 16px;
+  padding: 10px;
+  cursor: pointer;
+}
+.filterProgrammCategoryOption:hover {
+  color: rgb(255, 64, 125);
+}
+.filterProgrammCategoryIconsContainer {
+  position: relative;
+  background-color: #eef7ff;
+  border: 1px solid gainsboro;
+  border-left: none;
+  width: 40px;
+}
+.filterAgeIconsContainer {
+  position: absolute;
+  background-color: #fff;
+  width: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+
+.filterProgrammCategoryIcon,
+.filterProgrammCategoryResetFilter,
+.filterAgeResetFilter {
+  cursor: pointer;
+  transition: all 0.3s;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  font-size: 20px;
+}
+.filterProgrammCategoryIcon {
+  z-index: 0;
+}
+.filterProgrammCategoryIcon.active {
+  transform: translate(50%, -50%) rotate(180deg);
+}
+.filtersIconWrapper {
+  position: relative;
+}
+.activeFiltersCounter {
+  top: -10px;
+  right: -10px;
+  position: absolute;
+  font-size: 14px;
+  color: rgb(255, 64, 125);
+}
+
+.coursesShowMoreAchievementsTitle {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.swiper {
+  width: 100%;
+}
+
+.swiperSlide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiperSlide img {
+  display: block;
+  width: 100%;
+}
+
+.showScheduleButton {
+  border: none;
+  background-color: transparent;
+  padding: 0px;
+  background-color: #fdde55;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  font-size: 22px;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: #524c42;
+  text-align: center;
+}
+.showScheduleButton:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
