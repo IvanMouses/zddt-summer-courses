@@ -2,7 +2,7 @@ import classes from "./Courses.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
 import { useParams } from "react-router-dom";
-import { coursesCardsData } from "./сoursesCardsData";
+import coursesCardsData from "./coursesCardsData.js";
 import handleActive from "./handleActive";
 import { useEffect } from "react";
 
@@ -101,6 +101,15 @@ export default function CoursesShowMore() {
                             }
                             data-group={group.id}
                           >
+                            {group.startDate && (
+                              <p
+                                className={
+                                  classes.coursesShowMoreCardProgrammScheduleYear
+                                }
+                              >
+                                <span>Старт занятий</span>: {group?.startDate}
+                              </p>
+                            )}
                             <p
                               className={
                                 classes.coursesShowMoreCardProgrammScheduleYear

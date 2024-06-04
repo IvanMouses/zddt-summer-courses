@@ -1,4 +1,4 @@
-export const coursesCardsData = [
+const coursesCardsData = [
   {
     image: {
       src: "img/Courses/Summer/1.jpg",
@@ -10,7 +10,7 @@ export const coursesCardsData = [
       {
         programmName: "ПриклюЧТЕНИЕ",
         teacher: {
-          teacherPic: ["/img/About/women-avatar.png"],
+          teacherPic: ["./img/About/women-avatar.png"],
           teacherName: ["Рыжова Татьяна Юрьевна"],
         },
         category: "социально-гуманитарная",
@@ -56,7 +56,7 @@ export const coursesCardsData = [
       {
         programmName: "Комиксы: 10 великих русских путешественников",
         teacher: {
-          teacherPic: ["/img/About/18.png"],
+          teacherPic: ["./img/About/18.png"],
           teacherName: ["Мершеева Евгения Александровна"],
         },
         category: "художественная",
@@ -109,7 +109,7 @@ export const coursesCardsData = [
       {
         programmName: "Основы графического дизайна",
         teacher: {
-          teacherPic: ["/img/About/19.png"],
+          teacherPic: ["./img/About/19.png"],
           teacherName: ["Пятова Полина Сергеевна"],
         },
         category: "техническая",
@@ -163,7 +163,7 @@ export const coursesCardsData = [
       {
         programmName: "Искусство комикса: краткий курс (эмоции)",
         teacher: {
-          teacherPic: ["/img/About/19.png"],
+          teacherPic: ["./img/About/19.png"],
           teacherName: ["Пятова Полина Сергеевна"],
         },
         category: "художественная",
@@ -203,7 +203,7 @@ export const coursesCardsData = [
       {
         programmName: "Скетчинг: краткий курс (портрет)",
         teacher: {
-          teacherPic: ["/img/About/19.png"],
+          teacherPic: ["./img/About/19.png"],
           teacherName: ["Пятова Полина Сергеевна"],
         },
         category: "художественная",
@@ -245,7 +245,7 @@ export const coursesCardsData = [
       {
         programmName: "Основы 3D - моделирования",
         teacher: {
-          teacherPic: ["/img/About/19.png"],
+          teacherPic: ["./img/About/19.png"],
           teacherName: ["Пятова Полина Сергеевна"],
         },
         category: "техническая",
@@ -285,7 +285,7 @@ export const coursesCardsData = [
       {
         programmName: "Типографика",
         teacher: {
-          teacherPic: ["/img/About/19.png"],
+          teacherPic: ["./img/About/19.png"],
           teacherName: ["Пятова Полина Сергеевна"],
         },
         category: "техническая",
@@ -325,7 +325,7 @@ export const coursesCardsData = [
       {
         programmName: "Природоведение",
         teacher: {
-          teacherPic: ["/img/About/women-avatar.png"],
+          teacherPic: ["./img/About/women-avatar.png"],
           teacherName: ["Пятова Татьяна Александровна"],
         },
         category: "естественнонаучная",
@@ -364,7 +364,7 @@ export const coursesCardsData = [
       {
         programmName: "Проект «Зеленый город»",
         teacher: {
-          teacherPic: ["/img/About/women-avatar.png"],
+          teacherPic: ["./img/About/women-avatar.png"],
           teacherName: ["Пятова Татьяна Александровна"],
         },
         category: "естественнонаучная",
@@ -377,6 +377,7 @@ export const coursesCardsData = [
           {
             id: 0,
             groupName: "Группа № 1",
+            startDate: "28.06.2024",
             year: "1-й год обучения",
             age: "8-12 лет",
             schedule: {
@@ -403,7 +404,7 @@ export const coursesCardsData = [
       {
         programmName: "Вокальный ансамбль «Маленькие звездочки»",
         teacher: {
-          teacherPic: ["/img/About/11.png"],
+          teacherPic: ["./img/About/11.png"],
           teacherName: ["Гольцова Наталья Георгиевна"],
         },
         category: "художественная",
@@ -444,6 +445,7 @@ export const coursesCardsData = [
           {
             id: 2,
             groupName: "Группа № 3",
+            startDate: "27.06.2024",
             year: "1-й год обучения",
             age: "7-8 лет",
             schedule: {
@@ -458,6 +460,7 @@ export const coursesCardsData = [
           {
             id: 3,
             groupName: "Группа № 4",
+            startDate: "27.06.2024",
             year: "1-й год обучения",
             age: "8-9 лет",
             schedule: {
@@ -484,7 +487,7 @@ export const coursesCardsData = [
       {
         programmName: "ОФП для малышей",
         teacher: {
-          teacherPic: ["/img/About/17.png"],
+          teacherPic: ["./img/About/17.png"],
           teacherName: ["Матвеева Наталья Евгеньевна"],
         },
         category: "физкультурно-спортивная",
@@ -523,7 +526,7 @@ export const coursesCardsData = [
       {
         programmName: "Дизайн-студия «Впечатление»",
         teacher: {
-          teacherPic: ["/img/About/24.png"],
+          teacherPic: ["./img/About/24.png"],
           teacherName: ["Ярош Лариса Николаевна"],
         },
         category: "техническая",
@@ -576,7 +579,7 @@ export const coursesCardsData = [
       {
         programmName: "Мастерская художника. Вокруг света",
         teacher: {
-          teacherPic: ["/img/About/21.png"],
+          teacherPic: ["./img/About/21.png"],
           teacherName: ["Рябченко-Лякс Наталья Сергеевна"],
         },
         category: "художественная",
@@ -618,6 +621,7 @@ export const coursesCardsData = [
           {
             id: 2,
             groupName: "Группа № 3",
+            startDate: "26.07.2024",
             year: "1-й год обучения",
             age: "7-10 лет",
             schedule: {
@@ -632,6 +636,7 @@ export const coursesCardsData = [
           {
             id: 3,
             groupName: "Группа № 4",
+            startDate: "26.07.2024",
             year: "1-й год обучения",
             age: "7-10 лет",
             schedule: {
@@ -646,6 +651,7 @@ export const coursesCardsData = [
           {
             id: 4,
             groupName: "Группа № 5",
+            startDate: "26.07.2024",
             year: "1-й год обучения",
             age: "7-10 лет",
             schedule: {
@@ -660,6 +666,7 @@ export const coursesCardsData = [
           {
             id: 5,
             groupName: "Группа № 6",
+            startDate: "26.07.2024",
             year: "1-й год обучения",
             age: "7-10 лет",
             schedule: {
@@ -686,7 +693,7 @@ export const coursesCardsData = [
       {
         programmName: "Проект «День без войны»",
         teacher: {
-          teacherPic: ["/img/About/12.png"],
+          teacherPic: ["./img/About/12.png"],
           teacherName: ["Дерец Юлиана Валентиновна"],
         },
         category: "художественная",
@@ -725,7 +732,7 @@ export const coursesCardsData = [
       {
         programmName: "Академия рукоделия (валяние из шерсти)",
         teacher: {
-          teacherPic: ["/img/About/12.png"],
+          teacherPic: ["./img/About/12.png"],
           teacherName: ["Дерец Юлиана Валентиновна"],
         },
         category: "художественная",
@@ -764,7 +771,7 @@ export const coursesCardsData = [
       {
         programmName: "Игрушки из всего на свете",
         teacher: {
-          teacherPic: ["/img/About/12.png"],
+          teacherPic: ["./img/About/12.png"],
           teacherName: ["Дерец Юлиана Валентиновна"],
         },
         category: "художественная",
@@ -791,6 +798,7 @@ export const coursesCardsData = [
           {
             id: 1,
             groupName: "Группа № 2",
+            startDate: "26.06.2024",
             year: "1-й год обучения",
             age: "10-14 лет",
             schedule: {
@@ -817,7 +825,7 @@ export const coursesCardsData = [
       {
         programmName: "Проект «Моя Россия»",
         teacher: {
-          teacherPic: ["/img/About/12.png"],
+          teacherPic: ["./img/About/12.png"],
           teacherName: ["Дерец Юлиана Валентиновна"],
         },
         category: "художественная",
@@ -830,6 +838,7 @@ export const coursesCardsData = [
           {
             id: 0,
             groupName: "Группа № 1",
+            startDate: "02.07.2024",
             year: "1-й год обучения",
             age: "7-14 лет",
             schedule: {
@@ -856,7 +865,7 @@ export const coursesCardsData = [
       {
         programmName: "Поп-стар",
         teacher: {
-          teacherPic: ["/img/About/22.png"],
+          teacherPic: ["./img/About/22.png"],
           teacherName: ["Самокрайняя Александра Сергеевна"],
         },
         category: "художественная",
@@ -885,6 +894,7 @@ export const coursesCardsData = [
           {
             id: 1,
             groupName: "Группа № 2",
+            startDate: "28.06.2024",
             year: "1-й год обучения",
             age: "7-14 лет",
             schedule: {
@@ -911,7 +921,7 @@ export const coursesCardsData = [
       {
         programmName: "Коллектив современного и эстрадного танца «Magic Dance»",
         teacher: {
-          teacherPic: ["/img/About/22.png"],
+          teacherPic: ["./img/About/22.png"],
           teacherName: ["Самокрайняя Александра Сергеевна"],
         },
         category: "художественная",
@@ -953,6 +963,7 @@ export const coursesCardsData = [
           {
             id: 2,
             groupName: "Группа № 3",
+            startDate: "28.06.2024",
             year: "1-й год обучения",
             age: "8-13 лет",
             schedule: {
@@ -993,7 +1004,7 @@ export const coursesCardsData = [
       {
         programmName: "Каратэ и самооборона",
         teacher: {
-          teacherPic: ["/img/About/14.png"],
+          teacherPic: ["./img/About/14.png"],
           teacherName: ["Константинов Алексей Леонидович"],
         },
         category: "физкультурно-спортивная",
@@ -1032,7 +1043,7 @@ export const coursesCardsData = [
       {
         programmName: "Спортивные игры",
         teacher: {
-          teacherPic: ["/img/About/14.png"],
+          teacherPic: ["./img/About/14.png"],
           teacherName: ["Константинов Алексей Леонидович"],
         },
         category: "физкультурно-спортивная",
@@ -1059,6 +1070,7 @@ export const coursesCardsData = [
           {
             id: 1,
             groupName: "Группа № 2",
+            startDate: "26.06.2024",
             year: "1-й год обучения",
             age: "7-12 лет",
             schedule: {
@@ -1085,7 +1097,7 @@ export const coursesCardsData = [
       {
         programmName: "Мастерская брошек",
         teacher: {
-          teacherPic: ["/img/About/10.png"],
+          teacherPic: ["./img/About/10.png"],
           teacherName: ["Вылигжанина Юлия Викторовна"],
         },
         category: "художественная",
@@ -1112,6 +1124,7 @@ export const coursesCardsData = [
           {
             id: 1,
             groupName: "Группа № 2",
+            startDate: "26.06.2024",
             year: "1-й год обучения",
             age: "10-16 лет",
             schedule: {
@@ -1138,7 +1151,7 @@ export const coursesCardsData = [
       {
         programmName: "Искусство анимации",
         teacher: {
-          teacherPic: ["/img/About/10.png"],
+          teacherPic: ["./img/About/10.png"],
           teacherName: ["Вылигжанина Юлия Викторовна"],
         },
         category: "техническая",
@@ -1166,6 +1179,7 @@ export const coursesCardsData = [
           {
             id: 1,
             groupName: "Группа № 2",
+            startDate: "26.06.2024",
             year: "1-й год обучения",
             age: "9-12 лет",
             schedule: {
@@ -1180,6 +1194,7 @@ export const coursesCardsData = [
           {
             id: 2,
             groupName: "Группа № 3",
+            startDate: "01.07.2024",
             year: "1-й год обучения",
             age: "9-12 лет",
             schedule: {
@@ -1206,7 +1221,7 @@ export const coursesCardsData = [
       {
         programmName: "Театральные игры",
         teacher: {
-          teacherPic: ["/img/About/10.png"],
+          teacherPic: ["./img/About/10.png"],
           teacherName: ["Вылигжанина Юлия Викторовна"],
         },
         category: "художественная",
@@ -1245,7 +1260,7 @@ export const coursesCardsData = [
       {
         programmName: "Студия изо и дпи «Фантазия»",
         teacher: {
-          teacherPic: ["/img/About/18.png"],
+          teacherPic: ["./img/About/18.png"],
           teacherName: ["Мершеева Евгения Александровна"],
         },
         category: "художественная",
@@ -1273,6 +1288,7 @@ export const coursesCardsData = [
           {
             id: 1,
             groupName: "Группа № 2 (ДЕТИ С ОВЗ)",
+            startDate: "27.06.2024",
             year: "1-й год обучения",
             age: "7-10 лет",
             schedule: {
@@ -1287,6 +1303,7 @@ export const coursesCardsData = [
           {
             id: 2,
             groupName: "Группа № 3",
+            startDate: "27.06.2024",
             year: "1-й год обучения",
             age: "6-7 лет",
             schedule: {
@@ -1313,7 +1330,7 @@ export const coursesCardsData = [
       {
         programmName: "Проект «Декоративный семейный портрет»",
         teacher: {
-          teacherPic: ["/img/About/18.png"],
+          teacherPic: ["./img/About/18.png"],
           teacherName: ["Мершеева Евгения Александровна"],
         },
         category: "художественная",
@@ -1326,6 +1343,7 @@ export const coursesCardsData = [
           {
             id: 0,
             groupName: "Группа № 1",
+            startDate: "05.07.2024",
             year: "1-й год обучения",
             age: "7-10 лет",
             schedule: {
@@ -1352,7 +1370,7 @@ export const coursesCardsData = [
       {
         programmName: "Золотой наперсток",
         teacher: {
-          teacherPic: ["/img/About/23.png"],
+          teacherPic: ["./img/About/23.png"],
           teacherName: ["Степаненко Лилия Викторовна"],
         },
         category: "художественная",
@@ -1393,6 +1411,7 @@ export const coursesCardsData = [
           {
             id: 2,
             groupName: "Группа № 3",
+            startDate: "27.06.2024",
             year: "1-й год обучения",
             age: "8-10 лет",
             schedule: {
@@ -1407,6 +1426,7 @@ export const coursesCardsData = [
           {
             id: 3,
             groupName: "Группа № 4",
+            startDate: "27.06.2024",
             year: "1-й год обучения",
             age: "6-7 лет",
             schedule: {
@@ -1423,3 +1443,5 @@ export const coursesCardsData = [
     ],
   },
 ];
+
+export default coursesCardsData;

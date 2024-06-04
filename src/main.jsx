@@ -9,13 +9,17 @@ import {
 import App from "./components/App";
 import CoursesShowMore from "./components/Courses/CoursesShowMore";
 import Schedule from "./components/Schedule/Schedule";
+
 import "./index.css";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<App />}>
-      <Route path="/:coursTitle" element={<CoursesShowMore />} />
-      <Route path="/schedule" element={<Schedule />} />
+    <Route path="/zddt-summer-courses" element={<App />}>
+      <Route
+        path="/zddt-summer-courses/:coursTitle"
+        element={<CoursesShowMore />}
+      />
+      <Route path="/zddt-summer-courses/schedule" element={<Schedule />} />
     </Route>
   )
 );

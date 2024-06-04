@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 import classes from "./Courses.module.css";
-import { coursesCardsData } from "./сoursesCardsData";
+import coursesCardsData from "./coursesCardsData.js";
 
 export default function Courses() {
   return (
     <section className={classes.courses}>
       <div className={classes.coursesContainer}>
         <Link
-          to="/schedule"
+          to="/zddt-summer-courses/schedule"
           type="button"
           className={classes.showScheduleButton}
         >
