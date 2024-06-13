@@ -35,6 +35,11 @@ export default function Courses() {
                     с {card.extraText[0]} до{" "}
                     {card.extraText[card.extraText.length - 1]} лет
                   </span>
+                  {card.extraMonth && (
+                    <span className={classes.coursesCardExtraText}>
+                      {card?.extraMonth}
+                    </span>
+                  )}
                 </div>
               </div>
             </Link>
