@@ -184,7 +184,7 @@
 .coursesShowMoreCardProgrammCategory,
 .coursesShowMoreCardProgrammDuration,
 .coursesShowMoreCardProgrammPrice {
-  font-size: 22px;
+  font-size: 18px;
   margin-bottom: 10px;
 }
 .coursesShowMoreCardTeacherName > span,
@@ -195,7 +195,7 @@
 }
 
 .coursesShowMoreCardProgrammDescription > p {
-  font-size: 22px;
+  font-size: 18px;
   text-align: justify;
   margin-bottom: 10px;
 }
@@ -231,7 +231,7 @@
   flex: 1 1 auto;
   text-align: center;
   padding: 20px;
-  font-size: 30px;
+  font-size: 18px;
   background-color: rgb(219, 240, 253);
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
@@ -325,7 +325,7 @@
 .coursesShowMoreCardProgrammScheduleYear,
 .coursesShowMoreCardProgrammScheduleAge {
   margin-bottom: 10px;
-  font-size: 22px;
+  font-size: 18px;
 }
 .coursesShowMoreCardProgrammScheduleYear > span,
 .coursesShowMoreCardProgrammScheduleAge > span {
@@ -340,7 +340,7 @@
   }
 }
 .coursesShowMoreCardProgrammScheduleTableDays {
-  font-size: 22px;
+  font-size: 18px;
   display: flex;
 }
 .coursesShowMoreCardProgrammScheduleTableDay {

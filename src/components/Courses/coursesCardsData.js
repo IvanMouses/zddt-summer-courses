@@ -1,6 +1,138 @@
 const coursesCardsData = [
   {
     image: {
+      src: "img/Courses/15.jpg",
+    },
+    title:
+      "Коллектив современного и эстрадного танца «Magic Dance» (Логунова Н.А.)",
+    extraText: [5, 6, 7, 8, 9, 10, 11, 12, 13],
+    extraMonth: "старт в июле",
+    category: "Художественная",
+    programms: [
+      {
+        programmName:
+          "Коллектив современного и эстрадного танца «Magic Dance» (Логунова Н.А.)",
+        teacher: {
+          teacherPic: ["./img/About/16.png"],
+          teacherName: ["Логунова Наталья Александровна"],
+        },
+        category: "художественная",
+        duration: "18 часов",
+        price: "на бюджетной основе (бесплатно)",
+        description: [
+          "Коллектив современного и эстрадного танца «Magic Dance» направлен на всестороннее развитие общих физических и художественных навыков.",
+          "В коллективе обучающиеся получат навыки классической хореографии, изучат современные и эстрадное направления.",
+        ],
+        groups: [
+          {
+            id: 0,
+            groupName: "Группа № 1",
+            startDate: "15.07.2024",
+            year: "1-й год обучения",
+            age: "6-8 лет",
+            schedule: {
+              monday: "",
+              tuesday: "12:30 – 14:00",
+              wednesday: "",
+              thursday: "",
+              friday: "12:30 – 14:00",
+              saturday: "",
+            },
+          },
+          {
+            id: 1,
+            groupName: "Группа № 2",
+            startDate: "15.07.2024",
+            year: "1-й год обучения",
+            age: "8-13 лет",
+            schedule: {
+              monday: "",
+              tuesday: "14:10 – 15:40",
+              wednesday: "",
+              thursday: "",
+              friday: "14:10 – 15:40",
+              saturday: "",
+            },
+          },
+          {
+            id: 2,
+            groupName: "Группа № 3",
+            startDate: "15.07.2024",
+            year: "1-й год обучения",
+            age: "8-13 лет",
+            schedule: {
+              monday: "",
+              tuesday: "16:00 – 17:30",
+              wednesday: "",
+              thursday: "",
+              friday: "16:00 – 17:30",
+              saturday: "",
+            },
+          },
+          {
+            id: 3,
+            groupName: "Группа № 4",
+            startDate: "15.07.2024",
+            year: "1-й год обучения",
+            age: "5-6 лет",
+            schedule: {
+              monday: "",
+              tuesday: "18:10 – 19:00",
+              wednesday: "",
+              thursday: "",
+              friday: "18:10 – 19:00",
+              saturday: "",
+            },
+          },
+        ],
+      },
+    ],
+  },
+  {
+    image: {
+      src: "img/Courses/Summer/10.jpg",
+    },
+    title: "Поп-стар (Логунова Н.А.)",
+    extraText: [9, 10, 11, 12, 13, 14],
+    extraMonth: "старт в июле",
+    category: "Художественная",
+    programms: [
+      {
+        programmName: "Поп-стар  (Логунова Н.А.)",
+        teacher: {
+          teacherPic: ["./img/About/16.png"],
+          teacherName: ["Логунова Наталья Александровна"],
+        },
+        category: "художественная",
+        duration: "14 часов",
+        price: "на бюджетной основе (бесплатно)",
+        description: [
+          "Танцевальная программа «Поп-стар» направлена на подготовку детей к танцу, который можно быстро выучить и выкладывать в социальные сети. Ведь важно не только снять тренд, а уверенно и стильно показать себя.",
+          "Разбирая каждое движение с педагогом ребёнок сможет скоординировать тело, развивать свои физические данные и получать положительные эмоции!",
+          "Результатом каждого занятия будет снятое короткое видео в социальные сети, а к концу программы придумаем собственный тренд, который можно запустить среди своих друзей!",
+        ],
+        groups: [
+          {
+            id: 1,
+            groupName: "Группа № 1",
+            startDate: "15.07.2024",
+            year: "1-й год обучения",
+            age: "9-14 лет",
+            schedule: {
+              monday: "",
+              tuesday: "11:00 – 11:45",
+              wednesday: "",
+              thursday: "",
+              friday: "11:00 – 11:45",
+              saturday: "",
+            },
+          },
+        ],
+      },
+    ],
+  },
+  {
+    image: {
       src: "img/Courses/14.jpg",
     },
     title: "Студия вышивки",
@@ -1184,12 +1316,12 @@ const coursesCardsData = [
     image: {
       src: "img/Courses/Summer/10.jpg",
     },
-    title: "Поп-стар",
+    title: "Поп-стар (Самокрайняя А.С.)",
     extraText: [7, 8, 9, 10, 11, 12, 13, 14],
     category: "Художественная",
     programms: [
       {
-        programmName: "Поп-стар",
+        programmName: "Поп-стар  (Самокрайняя А.С.)",
         teacher: {
           teacherPic: ["./img/About/22.png"],
           teacherName: ["Самокрайняя Александра Сергеевна"],
@@ -1220,7 +1352,6 @@ const coursesCardsData = [
           {
             id: 1,
             groupName: "Группа № 2",
-            startDate: "28.06.2024",
             year: "1-й год обучения",
             age: "7-14 лет",
             schedule: {
@@ -1240,12 +1371,14 @@ const coursesCardsData = [
     image: {
       src: "img/Courses/15.jpg",
     },
-    title: "Коллектив современного и эстрадного танца «Magic Dance»",
+    title:
+      "Коллектив современного и эстрадного танца «Magic Dance» (Самокрайняя А.С.)",
     extraText: [5, 6, 7, 8, 9, 10, 11, 12, 13],
     category: "Художественная",
     programms: [
       {
-        programmName: "Коллектив современного и эстрадного танца «Magic Dance»",
+        programmName:
+          "Коллектив современного и эстрадного танца «Magic Dance» (Самокрайняя А.С.)",
         teacher: {
           teacherPic: ["./img/About/22.png"],
           teacherName: ["Самокрайняя Александра Сергеевна"],
