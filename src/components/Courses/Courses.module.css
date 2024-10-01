@@ -32,7 +32,7 @@
 }
 .coursesCards {
   display: grid;
-  grid-template-columns: repeat(1, 500px);
+  grid-template-columns: repeat(2, 250px);
   gap: 10px;
 }
 @media (max-width: 425px) {
@@ -81,9 +81,9 @@
 }
 .coursesCardTitle {
   text-align: center;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 600;
-  padding: 20px;
+  padding: 5px;
 }
 @media (max-width: 375px) {
   .coursesCardTitle {
@@ -95,17 +95,18 @@
   flex-direction: column;
   row-gap: 5px;
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 5px;
+  right: 5px;
 }
 .coursesCardExtraText {
   width: fit-content;
   align-self: flex-end;
   background-color: #fff;
-  padding: 10px;
+  padding: 5px;
   border-radius: 10px;
   font-weight: 600;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  font-size: 10px;
 }
 @media (max-width: 425px) {
   .coursesCardExtraText {
@@ -157,7 +158,7 @@
 }
 .coursesShowMoreCardTitle {
   font-weight: 600;
-  font-size: 30px;
+  font-size: 20px;
   margin-bottom: 20px;
 }
 .coursesShowMoreCardTeacherIcons {
@@ -172,7 +173,7 @@
   margin-bottom: 10px;
 }
 .coursesShowMoreCardTeacherIcon > img {
-  max-width: 200px;
+  max-width: 150px;
   width: 100%;
 }
 @media (max-width: 425px) {
@@ -184,7 +185,7 @@
 .coursesShowMoreCardProgrammCategory,
 .coursesShowMoreCardProgrammDuration,
 .coursesShowMoreCardProgrammPrice {
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 10px;
 }
 .coursesShowMoreCardTeacherName > span,
@@ -195,7 +196,7 @@
 }
 
 .coursesShowMoreCardProgrammDescription > p {
-  font-size: 18px;
+  font-size: 14px;
   text-align: justify;
   margin-bottom: 10px;
 }
@@ -230,8 +231,8 @@
   cursor: pointer;
   flex: 1 1 auto;
   text-align: center;
-  padding: 20px;
-  font-size: 18px;
+  padding: 15px;
+  font-size: 14px;
   background-color: rgb(219, 240, 253);
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
@@ -325,7 +326,7 @@
 .coursesShowMoreCardProgrammScheduleYear,
 .coursesShowMoreCardProgrammScheduleAge {
   margin-bottom: 10px;
-  font-size: 18px;
+  font-size: 16px;
 }
 .coursesShowMoreCardProgrammScheduleYear > span,
 .coursesShowMoreCardProgrammScheduleAge > span {
@@ -340,7 +341,7 @@
   }
 }
 .coursesShowMoreCardProgrammScheduleTableDays {
-  font-size: 18px;
+  font-size: 16px;
   display: flex;
 }
 .coursesShowMoreCardProgrammScheduleTableDay {

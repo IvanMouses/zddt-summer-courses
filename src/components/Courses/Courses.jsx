@@ -32,8 +32,10 @@ export default function Courses() {
                 <h3 className={classes.coursesCardTitle}>{card.title}</h3>
                 <div className={classes.coursesCardExtra}>
                   <span className={classes.coursesCardExtraText}>
-                    с {card.extraText[0]} до{" "}
-                    {card.extraText[card.extraText.length - 1]} лет
+                    {card.extraText.length > 1
+                      ? `с ${card.extraText[0]} до
+                        ${card.extraText[card.extraText.length - 1]} лет`
+                      : `для ${card.extraText[0]} лет`}
                   </span>
                   {card.extraMonth && (
                     <span className={classes.coursesCardExtraText}>

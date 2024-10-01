@@ -72,6 +72,17 @@ export default function Schedule() {
               </a>
             </LightGallery>
           </SwiperSlide>
+          <SwiperSlide>
+            <LightGallery download={false} counter={false}>
+              <a href="./img/Schedule/6.jpg">
+                <img
+                  className={classes.scheduleSwiperImg}
+                  alt="Пятница"
+                  src="./img/Schedule/6.png"
+                />
+              </a>
+            </LightGallery>
+          </SwiperSlide>
         </Swiper>
       </div>
     </>
