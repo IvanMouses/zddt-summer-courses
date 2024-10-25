@@ -37,11 +37,15 @@ export default function Courses() {
                         ${card.extraText[card.extraText.length - 1]} лет`
                       : `для ${card.extraText[0]} лет`}
                   </span>
-                  {card.extraMonth && (
-                    <span className={classes.coursesCardExtraText}>
-                      {card?.extraMonth}
-                    </span>
-                  )}
+                  {card.extraInfo &&
+                    card.extraInfo.map((i, index) => (
+                      <span
+                        key={index}
+                        className={classes.coursesCardExtraText}
+                      >
+                        {card.extraInfo}
+                      </span>
+                    ))}
                 </div>
               </div>
             </Link>
