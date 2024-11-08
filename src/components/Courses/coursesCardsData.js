@@ -5,6 +5,7 @@ const coursesCardsData = [
       src: "img/Courses/35.jpg",
     },
     title: "Изостудия «Творец»",
+    vacantPlaces: true,
     extraText: [5],
     category: "Художественная",
     programms: [
@@ -25,6 +26,8 @@ const coursesCardsData = [
         groups: [
           {
             id: 0,
+            vacantPlaces:
+              "Группа укомплектована (мест нет, возможна запись в резерв)",
             groupName: "Группа № 1",
             year: "1-й год обучения",
             age: "5 лет",
@@ -35,6 +38,23 @@ const coursesCardsData = [
               wednesday: "",
               thursday: "16:30 – 17:40",
               friday: "",
+              saturday: "",
+            },
+          },
+          {
+            id: 1,
+            // vacantPlaces:
+            //   "Группа укомплектована (мест нет, возможна запись в резерв)",
+            groupName: "Группа № 2",
+            year: "1-й год обучения",
+            age: "5 лет",
+            signInButtonAllowed: false,
+            schedule: {
+              monday: "",
+              tuesday: "",
+              wednesday: "17:50 – 19:20",
+              thursday: "",
+              friday: "17:50 – 19:20",
               saturday: "",
             },
           },
@@ -336,6 +356,124 @@ const coursesCardsData = [
   },
   {
     image: {
+      src: "img/Courses/39.jpg",
+    },
+    title: "Керамисты",
+    extraText: [5, 6, 7, 8, 9, 10, 11, 12],
+    vacantPlaces: true,
+    // extraInfo: [
+    //   {
+    //     text: "Укомплектовано",
+    //     description: "Мест нет - возможна запись в резерв",
+    //   },
+    // ],
+    category: "Художественная",
+    programms: [
+      {
+        programmName: "Керамисты",
+        teacher: {
+          teacherPic: ["./img/About/women-avatar.png"],
+          teacherName: ["Сабирова Динара Рафаиловна"],
+        },
+        category: "художественная",
+        duration: "1 год",
+        price: "на бюджетной основе (бесплатно)",
+        description: [
+          "В программе: лепка, аппликация, работа с гончарным кругом",
+        ],
+        groups: [
+          {
+            id: 0,
+            // vacantPlaces:
+            //   "Группа укомплектована (мест нет, возможна запись в резерв)",
+            groupName: "Группа № 1",
+            year: "1-й год обучения",
+            age: "5-6 лет",
+            signInButtonAllowed: false,
+            schedule: {
+              monday: "",
+              tuesday: "",
+              wednesday: "",
+              thursday: "",
+              friday: "17:20 – 18:30",
+              saturday: "",
+            },
+          },
+          {
+            id: 1,
+            // vacantPlaces:
+            //   "Группа укомплектована (мест нет, возможна запись в резерв)",
+            groupName: "Группа № 2",
+            year: "1-й год обучения",
+            age: "7-8 лет",
+            signInButtonAllowed: false,
+            schedule: {
+              monday: "16:50 – 18:30",
+              tuesday: "",
+              wednesday: "16:50 – 18:30",
+              thursday: "",
+              friday: "",
+              saturday: "",
+            },
+          },
+          {
+            id: 2,
+            // vacantPlaces:
+            //   "Группа укомплектована (мест нет, возможна запись в резерв)",
+            groupName: "Группа № 3",
+            year: "1-й год обучения",
+            age: "9-12 лет",
+            signInButtonAllowed: false,
+            schedule: {
+              monday: "",
+              tuesday: "",
+              wednesday: "18:40 – 20:20",
+              thursday: "",
+              friday: "18:40 – 20:20",
+              saturday: "",
+            },
+          },
+          {
+            id: 3,
+            // vacantPlaces:
+            //   "Группа укомплектована (мест нет, возможна запись в резерв)",
+            groupName: "Группа № 4",
+            year: "1-й год обучения",
+            age: "7-8 лет",
+            signInButtonAllowed: false,
+            schedule: {
+              monday: "15:00 – 16:40",
+              tuesday: "",
+              wednesday: "",
+              thursday: "",
+              friday: "15:30 – 17:10",
+              saturday: "",
+            },
+          },
+          {
+            id: 4,
+            // vacantPlaces:
+            //   "Группа укомплектована (мест нет, возможна запись в резерв)",
+            groupName: "Группа № 5",
+            year: "1-й год обучения",
+            age: "9-12 лет",
+            signInButtonAllowed: false,
+            schedule: {
+              monday: "18:40 – 20:20",
+              tuesday: "",
+              wednesday: "",
+              thursday: "",
+              friday: "",
+              saturday: "16:00 – 17:40",
+            },
+          },
+        ],
+        signInButton: "https://dopobr.petersburgedu.ru/programs/97009/groups/",
+      },
+    ],
+  },
+  {
+    image: {
       src: "img/Courses/15.jpg",
     },
     title: "Коллектив современного и эстрадного танца «Magic Dance»",
@@ -541,49 +679,49 @@ const coursesCardsData = [
       "./img/Courses/Achievements/15-8.jpeg",
     ],
   },
-  {
-    image: {
-      src: "img/Courses/32.jpg",
-    },
-    title: "Студия текстиля «Волшебные лоскутки»",
-    extraText: [6, 7],
-    category: "Художественная",
-    programms: [
-      {
-        programmName: "Студия текстиля «Волшебные лоскутки»",
-        teacher: {
-          teacherPic: ["./img/About/women-avatar.png"],
-          teacherName: ["Дубровская Наталия Вадимовна"],
-        },
-        category: "художественная",
-        duration: "1 год",
-        price: "на бюджетной основе (бесплатно)",
-        description: [
-          "Лоскутки - небольшие кусочки ткани, которые остались после раскроя и могут быть использованы для создания необычных изделий для декора.",
-          "В программе: индивидуальные работы детей /без использования иголок, ниток/, выполненных в технике «лоскутная аппликация» /объемная или плоская.",
-          "Результат: в процессе творческих занятий дети научатся создавать – лоскутные панно, декоративные украшения, подарки к праздникам, игрушки.",
-        ],
-        groups: [
-          {
-            id: 0,
-            groupName: "Группа № 1",
-            year: "1-й год обучения",
-            age: "6-7 лет",
-            signInButtonAllowed: false,
-            schedule: {
-              monday: "",
-              tuesday: "",
-              wednesday: "18:00 – 19:30",
-              thursday: "",
-              friday: "18:00 – 19:30",
-              saturday: "",
-            },
-          },
-        ],
-        signInButton: "https://dopobr.petersburgedu.ru/programs/92620/groups/",
-      },
-    ],
-  },
+  // {
+  //   image: {
+  //     src: "img/Courses/32.jpg",
+  //   },
+  //   title: "Студия текстиля «Волшебные лоскутки»",
+  //   extraText: [6, 7],
+  //   category: "Художественная",
+  //   programms: [
+  //     {
+  //       programmName: "Студия текстиля «Волшебные лоскутки»",
+  //       teacher: {
+  //         teacherPic: ["./img/About/women-avatar.png"],
+  //         teacherName: ["Дубровская Наталия Вадимовна"],
+  //       },
+  //       category: "художественная",
+  //       duration: "1 год",
+  //       price: "на бюджетной основе (бесплатно)",
+  //       description: [
+  //         "Лоскутки - небольшие кусочки ткани, которые остались после раскроя и могут быть использованы для создания необычных изделий для декора.",
+  //         "В программе: индивидуальные работы детей /без использования иголок, ниток/, выполненных в технике «лоскутная аппликация» /объемная или плоская.",
+  //         "Результат: в процессе творческих занятий дети научатся создавать – лоскутные панно, декоративные украшения, подарки к праздникам, игрушки.",
+  //       ],
+  //       groups: [
+  //         {
+  //           id: 0,
+  //           groupName: "Группа № 1",
+  //           year: "1-й год обучения",
+  //           age: "6-7 лет",
+  //           signInButtonAllowed: false,
+  //           schedule: {
+  //             monday: "",
+  //             tuesday: "",
+  //             wednesday: "18:00 – 19:30",
+  //             thursday: "",
+  //             friday: "18:00 – 19:30",
+  //             saturday: "",
+  //           },
+  //         },
+  //       ],
+  //       signInButton: "https://dopobr.petersburgedu.ru/programs/92620/groups/",
+  //     },
+  //   ],
+  // },
   {
     image: {
       src: "img/Courses/16.jpg",
