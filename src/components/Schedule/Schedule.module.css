@@ -2,6 +2,7 @@
   display: flex;
   margin-left: 540px;
   flex: 1 1 100%;
+  box-sizing: border-box;
 }
 .scheduleSwiperImg {
   width: 100%;
